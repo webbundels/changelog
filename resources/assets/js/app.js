@@ -78,7 +78,7 @@ if (document.getElementById('changelog_index') !== null) {
             if (! edit){
                 let buttonEle = document.createElement('a');
                 buttonEle.innerHTML = 'Wijzigen';
-                buttonEle.href = '/documentatie/' + chapter.id;
+                buttonEle.href = '/changelog/' + chapter.id;
                 buttonEle.classList.add('title-button');
                 chapterEle.appendChild(buttonEle);
             }

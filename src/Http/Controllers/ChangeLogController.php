@@ -36,7 +36,7 @@ class ChangelogController extends Controller
         $changelogChapter->save();
 
         return redirect()
-            ->route('ChangelogPackage.index');
+            ->route('changelog.index');
     }
 
     public function edit(EditChangelogRequest $request, $id)

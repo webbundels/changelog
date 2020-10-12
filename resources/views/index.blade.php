@@ -25,6 +25,8 @@
         <div id="table_of_contents">
 
         </div>
+        
+        <div data-changelog-container class="changelog-container"></div>
     </div>  
 @stop
 
