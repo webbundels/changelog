@@ -9,15 +9,15 @@ Route::group([
 ], function()
 {
     # Index
-    Route::get('/',                     ['as' => 'index',               'uses' => 'webbundels\changelog\Http\Controllers\ChangelogController@index']);
+    Route::get('/',                     ['as' => 'index',               'uses' => 'Webbundels\Changelog\Http\Controllers\ChangelogController@index']);
 
     # Create
-    Route::get('create',               ['as' => 'create',              'uses' => 'webbundels\changelog\Http\Controllers\ChangelogController@create']);
-    Route::post('create',              ['as' => 'store',               'uses' => 'webbundels\changelog\Http\Controllers\ChangelogController@store']);
+    Route::get('create',               ['as' => 'create',              'uses' => 'Webbundels\Changelog\Http\Controllers\ChangelogController@create']);
+    Route::post('create',              ['as' => 'store',               'uses' => 'Webbundels\Changelog\Http\Controllers\ChangelogController@store']);
 
     # Edit
-    Route::get('{id}',                  ['as' => 'edit',                'uses' => 'webbundels\changelog\Http\Controllers\ChangelogController@edit']);
-    Route::post('{id}',                 ['as' => 'update',              'uses' => 'webbundels\changelog\Http\Controllers\ChangelogController@update']);
+    Route::get('{id}',                  ['as' => 'edit',                'uses' => 'Webbundels\Changelog\Http\Controllers\ChangelogController@edit']);
+    Route::post('{id}',                 ['as' => 'update',              'uses' => 'Webbundels\Changelog\Http\Controllers\ChangelogController@update']);
 
-    Route::get('{id}/delete',           ['as' => 'delete',              'uses' => 'webbundels\changelog\Http\Controllers\ChangelogController@delete']);
+    Route::get('{id}/delete',           ['as' => 'delete',              'uses' => 'Webbundels\Changelog\Http\Controllers\ChangelogController@delete']);
 });

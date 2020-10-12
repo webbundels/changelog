@@ -1,6 +1,6 @@
 <?php
 
-namespace webbundels\changelog\Models;
+namespace Webbundels\Changelog\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Builder;
