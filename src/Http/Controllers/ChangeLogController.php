@@ -11,7 +11,7 @@ use Webbundels\Changelog\Http\Requests\StoreChangelogRequest;
 use Webbundels\Changelog\Http\Requests\CreateChangelogRequest;
 use Webbundels\Changelog\Http\Requests\DeleteChangelogRequest;
 use Webbundels\Changelog\Http\Requests\UpdateChangelogRequest;
-Webbundels\\Changelog
+
 class ChangelogController extends Controller
 {
     public function index(ViewChangelogRequest $request)

@@ -1,6 +1,6 @@
 <?php
 
-namespace Webbundels\changelog;
+namespace Webbundels\Changelog;
 
 use Illuminate\Support\ServiceProvider;
 
