@@ -17,7 +17,7 @@ php artisan migrate
 2) Write logic in this method that determines if the user can view the changelog page.
 
 ```php
-public function getChangelogViewableAttribute() :boolean
+public function getChangelogViewableAttribute() :bool
 {
     return $this->can('view_changelog');
 }
@@ -28,7 +28,7 @@ public function getChangelogViewableAttribute() :boolean
 2) Write logic in this method that determines if the user can edit the changelog page.
 
 ```php
-public function getChangelogEditableAttribute() :boolean
+public function getChangelogEditableAttribute() :bool
 {
     return $this->can('edit_changelog');
 }
