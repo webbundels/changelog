@@ -1,17 +1,16 @@
 <?php
 
-namespace webbundels\changelog\Http\Controllers;
+namespace Webbundels\Changelog\Http\Controllers;
 
 use Illuminate\Support\Arr;
 use Illuminate\Routing\Controller;
-use webbundels\changelog\Models\ChangelogChapter;
-use webbundels\changelog\Http\Requests\EditChangelogRequest;
-use webbundels\changelog\Http\Requests\ViewChangelogRequest;
-use webbundels\changelog\Http\Requests\StoreChangelogRequest;
-use webbundels\changelog\Http\Requests\CreateChangelogRequest;
-use webbundels\changelog\Http\Requests\DeleteChangelogRequest;
-use webbundels\changelog\Http\Requests\UpdateChangelogRequest;
-use webbundels\changelog\Http\Requests\ChangeOrderChangelogRequest;
+use Webbundels\Changelog\Models\ChangelogChapter;
+use Webbundels\Changelog\Http\Requests\EditChangelogRequest;
+use Webbundels\Changelog\Http\Requests\ViewChangelogRequest;
+use Webbundels\Changelog\Http\Requests\StoreChangelogRequest;
+use Webbundels\Changelog\Http\Requests\CreateChangelogRequest;
+use Webbundels\Changelog\Http\Requests\DeleteChangelogRequest;
+use Webbundels\Changelog\Http\Requests\UpdateChangelogRequest;
 
 class ChangelogController extends Controller
 {

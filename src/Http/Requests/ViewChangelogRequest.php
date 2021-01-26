@@ -1,6 +1,6 @@
 <?php
 
-namespace Webbundels\changelog\Http\Requests;
+namespace Webbundels\Changelog\Http\Requests;
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Foundation\Http\FormRequest;
