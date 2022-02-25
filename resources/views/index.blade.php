@@ -20,10 +20,6 @@
                 <div class="styled-button cancel" data-cancel-button>Annuleren</div>
             </div>
         @endif
-
-        <div id="table_of_contents">
-
-        </div>
         
         <div data-changelog-container class="changelog-container"></div>
     </div>  

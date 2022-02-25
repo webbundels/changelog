@@ -16,7 +16,7 @@ class ChangelogController extends Controller
 {
     public function index(ViewChangelogRequest $request)
     {
-        $changelogChapters = ChangelogChapter::all();
+        $changelogChapters = ChangelogChapter::orderByDesc('created_at')->get();
 
         return view('ChangelogPackage::index', compact('changelogChapters'));
     }

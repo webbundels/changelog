@@ -10,10 +10,6 @@ var toolbarOptions = [
 if (document.getElementById('changelog_index') !== null) {
     chaptersBeforeEdit = JSON.parse(JSON.stringify(chapters));
 
-
-    // Table of contents
-    let tableOfContentsEle = document.querySelector('#table_of_contents');
-
     // form
     let form = document.getElementById("form");
 
@@ -38,19 +34,12 @@ if (document.getElementById('changelog_index') !== null) {
     function draw()
     {
         changelogEle.innerHTML = '';
-        tableOfContentsEle.innerHTML = '';
         
 
         document.getElementById('new_chapter_button').style.display = (edit ? 'none' : 'block');
 
         for (let index in chapters) {
             let chapter = chapters[index];
-
-            // Create table of contents item
-            let aEle = document.createElement('a');
-            aEle.href = '#chapter' + chapter.id;
-            aEle.innerHTML = chapter.title;
-            tableOfContentsEle.appendChild(aEle);
 
             // Create chapter element
             let chapterEle = document.createElement('div');
